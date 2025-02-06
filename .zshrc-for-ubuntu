@@ -15,12 +15,14 @@ SAVEHIST=1000000
 setopt extended_history
 alias history='history -t "%F %T"'
 # プロンプト
-# 2行表示
-precmd() {
-  print ""
+function add_line {
+  if [[ -z "${PS1_NEWLINE_LOGIN}" ]]; then
+    PS1_NEWLINE_LOGIN=true
+  else
+    printf '\n'
+  fi
 }
-PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
-%# "
+PROMPT_COMMAND='add_line'
 # 単語の区切り文字を指定する
 autoload -Uz select-word-style
 select-word-style default
