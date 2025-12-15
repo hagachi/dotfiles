@@ -6,9 +6,9 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 #########################################
 # Added by Maezono for general operations
 # and modified by hagachi
-alias setal='nvim ~/.alias'
+alias setal='v ~/.alias'
 alias fixal='source  ~/.alias'
-alias setzsh='nvim ~/.zshrc'
+alias setzsh='v ~/.zshrc'
 alias fixzsh='source ~/.zshrc'
 alias rehash='hash -r'
 alias which='command -v'
@@ -30,3 +30,11 @@ alias h='history'
 alias rt='rm *~'
 alias cu='clearup'
 alias v='nvim'
+alias duh='du -h -d 1 | sort -h'
+# projects (mac)
+alias cdp01='cd ~/Dropbox/02_Project/pj01_S21'
+alias cdp12='cd ~/Dropbox/02_Project/pj12_reroutes'
+alias cdp20='cd ~/Dropbox/02_Project/pj20_bd_rv_viz'
+alias cdp22='cd ~/Dropbox/02_Project/pj22_food-system'
+alias cdp24='cd ~/Dropbox/02_Project/pj24_legacy-kaken/'
+alias cdp24l='cd ~/Dropbox/02_Project/pj24_legacy-kaken-lii'
